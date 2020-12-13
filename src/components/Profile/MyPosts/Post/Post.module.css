@@ -1,0 +1,30 @@
+.item {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 5px;
+  color: greenyellow;
+  background-color: #777777;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+.posts{
+  padding: 15px 0;
+}
+
+.user{
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+
+}
+
+.postFooter{
+  padding-top: 5px;
+  border-top: 0.5px solid;
+}

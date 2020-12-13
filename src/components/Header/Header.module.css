@@ -1,0 +1,16 @@
+.header {
+    grid-area: h;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.header img {
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
