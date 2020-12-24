@@ -6,17 +6,6 @@
 
 
 
-.dialogsItems a{
-    color: aquamarine;
-    text-decoration: none;
-}
-.dialogsItems .activeLink {
-    color: gold;
-}
-.dialogsItems .activeLink .userLine{
-    background-color: #7e7e7e;
-    border-radius: 5px;
-}
 
 .messagesItem {
     width: auto;
@@ -74,6 +63,20 @@
     opacity: 0.8;
 }
 
+
+
+
+.dialogsItems a{
+    color: aquamarine;
+    text-decoration: none;
+}
+.dialogsItems .activeLink {
+    color: gold;
+}
+.dialogsItems .activeLink .userLine{
+    background-color: #7e7e7e;
+    border-radius: 5px;
+}
 
 
 .userLine{
