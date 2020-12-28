@@ -31,3 +31,31 @@
 .status{
     font-style: italic;
 }
+
+
+.selectedPage {
+    font-weight: bold;
+    color: orangered;
+    border-bottom: orangered 3px solid;
+}
+
+
+.pagination_block{
+    margin: 10px auto 0 auto;
+    max-width: 200px;
+    background: #eee;
+    padding: 5px 5px 10px 5px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.pagination_block::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.pagination_block span{
+    margin: 0 5px;
+    cursor: pointer;
+}

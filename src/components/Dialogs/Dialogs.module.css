@@ -33,6 +33,11 @@
     padding: 5px 10px;
     background: darkcyan;
     border-radius: 5px 5px 0 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.massagesWindow::-webkit-scrollbar{
+    width: 0;
 }
 
 .addMessageBlock{
