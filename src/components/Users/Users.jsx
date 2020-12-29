@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Users.module.css';
 import userPhoto from '../../assets/images/user1.webp'
+import Preloader from "../common/Preloader/Preloader";
 
 const Users = (props) => {
 
@@ -44,6 +45,10 @@ const Users = (props) => {
                     </div>
                 )
             }
+
+            <div>
+                { props.isFetching ? <Preloader />: null }
+            </div>
 
             <div className={styles.pagination_block}>
                 {
