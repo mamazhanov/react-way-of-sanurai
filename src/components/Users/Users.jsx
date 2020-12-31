@@ -2,6 +2,7 @@ import React from "react";
 import styles from './Users.module.css';
 import userPhoto from '../../assets/images/user1.webp'
 import Preloader from "../common/Preloader/Preloader";
+import {NavLink} from "react-router-dom";
 
 const Users = (props) => {
 
@@ -17,10 +18,13 @@ const Users = (props) => {
                 props.users.map(u =>
                     <div key={u.id} className={styles.usersPage}>
                         <div className={styles.users}>
+
                             <div className={styles.ava}>
-                                <div>
-                                    <img src={u.photos.small != null ? u.photos.small : userPhoto}/>
-                                </div>
+                                <NavLink to={'/profile/' + u.id}>
+                                    <div>
+                                        <img src={u.photos.small != null ? u.photos.small : userPhoto}/>
+                                    </div>
+                                </NavLink>
                                 <div>
                                     {u.followed
                                         ? <button onClick={() => {
@@ -31,6 +35,7 @@ const Users = (props) => {
                                         }}>Follow</button>}
                                 </div>
                             </div>
+
                             <div className={styles.description}>
                                 <div>
                                     <div>{u.name}</div>

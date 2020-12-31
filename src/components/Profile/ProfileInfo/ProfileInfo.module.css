@@ -1,3 +1,22 @@
 .descriptionBlock {
+    display: flex;
+    align-items: center;
     padding: 10px;
+}
+
+.ava{
+    width: 200px;
+    border-radius: 50%;
+}
+.description{
+    margin-left: 15px;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.contacts img{
+    width: 35px;
+    margin: 0 2px;
 }
