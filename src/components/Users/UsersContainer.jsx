@@ -40,6 +40,7 @@ class UsersContainer extends React.Component {
                        currentPage={this.props.currentPage}
                        onPageChanged={this.onPageChanged}
                        followingInProgress={this.props.followingInProgress}
+                       isFetching={this.props.isFetching}
                 />
             </div>
         )
