@@ -20,7 +20,7 @@
     width: fit-content;
     padding: 3px 8px;
     color: black;
-    background-color: #60bcbc;
+    background-color: darkgray;
     margin-top: 3px;
     border-radius: 15px;
 }
@@ -31,22 +31,32 @@
     width: auto;
     height: 88%;
     padding: 5px 10px;
-    background: darkcyan;
+    background: rgba(88, 88, 88, 9) url("../../assets/images/Whatsapp-Wallpaper-120.jpg") ;
+    background-size: cover;
     border-radius: 5px 5px 0 0;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 .massagesWindow::-webkit-scrollbar{
-    width: 0;
+    width: 5px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: transparent;
+}
+
+.massagesWindow::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 9em 0 0 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
 }
 
 .addMessageBlock{
     width: auto;
     display: flex;
     align-items: center;
-    background-color: #60bcbc;
+    background: rgba(88, 88, 88, 9);
     padding : 5px 10px;
     border-radius: 0 0 5px 5px;
+    border: black 1px solid;
 }
 
 .addMessageBlock input{
@@ -57,7 +67,7 @@
     color: black;
     border-radius: 15px;
     border: black 0.1px solid;
-    background: transparent;
+    background-color: gray;
 }
 
 .addMessageBlock a img{
@@ -72,7 +82,7 @@
 
 
 .dialogsItems a{
-    color: aquamarine;
+    color: whitesmoke;
     text-decoration: none;
 }
 .dialogsItems .activeLink {

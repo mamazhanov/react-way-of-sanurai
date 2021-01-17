@@ -34,9 +34,10 @@ const Dialogs = (props) => {
                 </div>
                 <div className={s.addMessageBlock}>
                     <input onChange={onMessageChange}
+                           autoFocus
                            value={state.newMessageText}/>
                     <a title={"Send message"} onClick={onSendMessage}>
-                        <img src="https://www.flaticon.com/svg/vstatic/svg/565/565340.svg?token=exp=1607084845~hmac=462596f1846220ffc40f684183fcdc18" alt="Send"/>
+                        <img src="https://cdn2.iconfinder.com/data/icons/dark-action-bar-2/96/send-512.png" alt="Send"/>
                     </a>
                 </div>
             </div>
