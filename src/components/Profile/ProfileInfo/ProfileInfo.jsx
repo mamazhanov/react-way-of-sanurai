@@ -2,6 +2,7 @@ import React from 'react';
 import  s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import userPhoto from "../../../assets/images/icons8-user-male-480.png";
+import ProfileStatus from "./ProfileStatus";
 
 const ProfileInfo = (props) => {
 
@@ -17,12 +18,17 @@ const ProfileInfo = (props) => {
                 </div>
                 
                 <div className={s.description}>
+
                     <h2> {props.profile.fullName}</h2>
+
+
                     <div>
                         О мне: {props.profile.aboutMe} <br/>
                         Ищу описание работы: {props.profile.lookingForAJobDescription}
                         {props.profile.lookingForAJob ? <p>Безработник</p> : <h2>Работает</h2>}
                     </div>
+
+
                     <div className={s.contacts}>
                         <div className={s.contacts}>
                             {props.profile.contacts.facebook ?
@@ -57,9 +63,13 @@ const ProfileInfo = (props) => {
                             }
                         </div>
                     </div>
+
+
                 </div>
                 
             </div>
+
+            <ProfileStatus status={"Hello world!"}/>
         </div>
     )
 }
