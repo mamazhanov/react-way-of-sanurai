@@ -20,3 +20,19 @@
     width: 35px;
     margin: 0 2px;
 }
+.aboutMe p{
+    font-weight: bold;
+}
+
+@media (max-width: 787px) {
+    .ava{
+        width: 120px;
+    }
+    .description{
+        max-width: 100%;
+        margin-left: 5px;
+    }
+    .userName{
+        font-size: 19px;
+    }
+}

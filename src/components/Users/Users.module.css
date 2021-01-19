@@ -40,6 +40,7 @@
 }
 
 
+
 .pagination_block{
     margin: 10px auto 0 auto;
     max-width: 200px;
@@ -58,4 +59,25 @@
 .pagination_block span{
     margin: 0 5px;
     cursor: pointer;
+}
+
+
+@media (max-width: 787px) {
+    .users{
+        margin-bottom: 5px;
+        padding: 8px;
+    }
+    .ava{
+        width: 20%;
+        text-align: left;
+    }
+    .ava img{
+        width: 50px;
+        margin: 0 auto;
+    }
+    .description{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
 }

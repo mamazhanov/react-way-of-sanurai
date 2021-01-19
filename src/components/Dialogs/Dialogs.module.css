@@ -3,17 +3,13 @@
     grid-template-columns: 2fr 10fr;
 }
 
-
-
-
+/*message items*/
 
 .messagesItem {
     width: auto;
     height: 500px;
     margin-left: 5px;
-
     font-size: 17px;
-
 }
 
 .messagesItem .message {
@@ -25,19 +21,20 @@
     border-radius: 15px;
 }
 
+/* MESSAGE WINDOW*/
 
-
-.massagesWindow{
+.massagesWindow {
     width: auto;
     height: 88%;
     padding: 5px 10px;
-    background: rgba(88, 88, 88, 9) url("../../assets/images/Whatsapp-Wallpaper-120.jpg") ;
+    background: rgba(88, 88, 88, 9) url("../../assets/images/Whatsapp-Wallpaper-120.jpg");
     background-size: cover;
     border-radius: 5px 5px 0 0;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-.massagesWindow::-webkit-scrollbar{
+
+.massagesWindow::-webkit-scrollbar {
     width: 5px; /* ширина для вертикального скролла */
     height: 8px; /* высота для горизонтального скролла */
     background-color: transparent;
@@ -49,60 +46,58 @@
     box-shadow: inset 1px 1px 10px #f3faf7;
 }
 
-.addMessageBlock{
+.addMessageBlock {
     width: auto;
     display: flex;
     align-items: center;
     background: rgba(88, 88, 88, 9);
-    padding : 5px 10px;
+    padding: 5px 10px;
     border-radius: 0 0 5px 5px;
     border: black 1px solid;
 }
 
-.addMessageBlock input{
-    width: 88%;
-    font-size: 17px;
-    outline: none;
-    padding: 5px 15px;
-    color: black;
-    border-radius: 15px;
-    border: black 0.1px solid;
-    background-color: gray;
-}
+/*DIALOGS ITEMS ACTIVE LINKS*/
 
-.addMessageBlock a img{
-    width: 30px;
-    padding-top: 3px;
-    margin-left: 5px;
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-
-
-
-.dialogsItems a{
+.dialogsItems a {
     color: whitesmoke;
     text-decoration: none;
 }
+
 .dialogsItems .activeLink {
     color: gold;
 }
-.dialogsItems .activeLink .userLine{
+
+.dialogsItems .activeLink .userLine {
     background-color: #7e7e7e;
     border-radius: 5px;
 }
 
 
-.userLine{
+.userLine {
     display: flex;
     align-items: center;
 }
-.userLine:hover{
+
+.userLine:hover {
     border-radius: 5px;
     background-color: #3c3636;
 }
-.userImages{
+
+.userImages {
     width: 50px;
     margin-right: 7px;
+}
+
+@media (max-width: 960px) {
+    .userImages {
+        width: 45px;
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 787px) {
+    .userImages {
+        width: 35px;
+        margin-right: 4px;
+    }
 }

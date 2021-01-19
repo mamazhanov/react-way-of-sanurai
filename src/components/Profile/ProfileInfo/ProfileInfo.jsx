@@ -19,13 +19,13 @@ const ProfileInfo = (props) => {
                 
                 <div className={s.description}>
 
-                    <h2> {props.profile.fullName}</h2>
+                    <h2 className={s.userName}> {props.profile.fullName}</h2>
 
 
-                    <div>
+                    <div className={s.aboutMe}>
                         О мне: {props.profile.aboutMe} <br/>
                         Ищу описание работы: {props.profile.lookingForAJobDescription}
-                        {props.profile.lookingForAJob ? <p>Безработник</p> : <h2>Работает</h2>}
+                        {props.profile.lookingForAJob ? <p>Безработник</p> : <p>Работает</p>}
                     </div>
 
 

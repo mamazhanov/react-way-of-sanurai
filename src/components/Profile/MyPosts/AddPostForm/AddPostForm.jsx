@@ -1,14 +1,15 @@
 import React from "react";
 import {Field, reduxForm} from "redux-form";
+import style from "./AddPostForm.module.css"
 
 
 const AddNewPostForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit}>
-            <div>
-                <Field component={"textarea"} name={"newPostText"}/>
+        <form className={style.form} onSubmit={props.handleSubmit}>
+            <div className={style.textareaBlock}>
+                <Field component={"textarea"}  name={"newPostText"}/>
             </div>
-            <div>
+            <div className={style.btnBlock}>
                 <button>Add post</button>
             </div>
         </form>

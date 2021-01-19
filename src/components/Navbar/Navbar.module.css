@@ -32,3 +32,12 @@
     border-radius: 3px;
     background-color: #777777;
 }
+
+@media (max-width: 787px) {
+    .nav {
+        padding: 7px;
+        margin-right: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+}

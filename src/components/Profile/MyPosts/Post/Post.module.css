@@ -1,31 +1,46 @@
 .item {
-  margin: 15px 0;
-  padding: 20px;
-  border-radius: 5px;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255,255,255, 0.5);
-  border: #eeeeee 1px solid;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: #eeeeee 1px solid;
 }
 
 .user img {
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-  margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 5px;
 }
 
-.posts{
-  padding: 15px 0;
+.posts {
+    padding: 15px 0;
 }
 
-.user{
-  padding-bottom: 5px;
-  display: flex;
-  align-items: center;
+.user {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
 
 }
 
-.postFooter{
-  padding-top: 5px;
-  border-top: 0.5px solid;
+.postFooter {
+    padding-top: 5px;
+    border-top: 0.5px solid;
+}
+
+
+@media (max-width: 787px) {
+    .item {
+        margin: 8px 0;
+        padding: 8px;
+    }
+  .user img {
+    width: 40px;
+    height: 40px;
+  }
+  .posts {
+    padding: 10px 0;
+  }
 }
