@@ -46,15 +46,15 @@
     box-shadow: inset 1px 1px 10px #f3faf7;
 }
 
-.addMessageBlock {
-    width: auto;
-    display: flex;
-    align-items: center;
-    background: rgba(88, 88, 88, 9);
-    padding: 5px 10px;
-    border-radius: 0 0 5px 5px;
-    border: black 1px solid;
-}
+/*.addMessageBlock {*/
+/*    width: auto;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    background: rgba(88, 88, 88, 9);*/
+/*    padding: 5px 10px;*/
+/*    border-radius: 0 0 5px 5px;*/
+/*    border: black 1px solid;*/
+/*}*/
 
 /*DIALOGS ITEMS ACTIVE LINKS*/
 
