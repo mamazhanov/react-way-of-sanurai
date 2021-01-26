@@ -5,3 +5,11 @@
 .formControl.error span{
     color: orangered;
 }
+
+.formSummaryError{
+    border: orangered 1px solid;
+    padding: 0 8px;
+    width: fit-content;
+    color: orangered;
+    border-radius: 15px;
+}
